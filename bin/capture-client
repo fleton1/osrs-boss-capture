@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Start the RuneLite developer client with Boss Capture built in.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+export JAVA_HOME="${JAVA_HOME:-$(ls -d "$HOME"/.local/jdks/jdk-17* 2>/dev/null | head -1)}"
+if [ ! -x "$JAVA_HOME/bin/java" ]; then
+	echo "No JDK found. Set JAVA_HOME or put a JDK 11+ in ~/.local/jdks." >&2
+	exit 1
+fi
+
+if pgrep -f 'bolt-launcher/.runelite.*net.runelite.client.RuneLite' >/dev/null; then
+	echo "The normal (Bolt) RuneLite is still running. Log out and close it first." >&2
+	exit 1
+fi
+if pgrep -f 'bin/java .*BossCapturePluginTest' >/dev/null; then
+	echo "The capture client is already running." >&2
+	exit 1
+fi
+
+exec ./gradlew --quiet run

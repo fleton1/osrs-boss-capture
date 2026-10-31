@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Close the capture client (if running) and open the normal Bolt launcher.
+set -euo pipefail
+
+if pgrep -f 'bin/java .*BossCapturePluginTest' >/dev/null; then
+	read -r -p "The capture client is running. Log out in game first. Close it now? [y/N] " ok
+	if [ "${ok,,}" != "y" ]; then
+		exit 1
+	fi
+	pkill -f BossCapturePluginTest || true
+	for _ in $(seq 20); do
+		pgrep -f 'bin/java .*BossCapturePluginTest' >/dev/null || break
+		sleep 0.5
+	done
+fi
+
+exec flatpak run com.adamcake.Bolt >/dev/null 2>&1 &
+echo "Bolt launcher opened. Play from there as usual."

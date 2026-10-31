@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Remove everything the capture client added outside this repo.
+# The normal Bolt RuneLite was never modified, so nothing there needs undoing.
+set -euo pipefail
+
+pkill -f BossCapturePluginTest 2>/dev/null || true
+rm -f "$HOME/.local/share/applications/runelite-boss-capture.desktop"
+
+if [ -d "$HOME/.runelite" ]; then
+	read -r -p "Delete the capture client's settings and cache in ~/.runelite? [y/N] " ok
+	[ "${ok,,}" = "y" ] && rm -rf "$HOME/.runelite" && echo "Removed ~/.runelite."
+fi
+if [ -d "$HOME/osrs-captures" ]; then
+	echo "Your recordings are still in ~/osrs-captures. Delete that folder yourself if you don't want them."
+fi
+echo "Done. To also remove the JDK: rm -rf ~/.local/jdks/jdk-17*  (only used by this)."

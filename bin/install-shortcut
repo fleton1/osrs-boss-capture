@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Add a "RuneLite (Boss Capture)" entry to the app menu, next to the normal Bolt one.
+set -euo pipefail
+repo="$(cd "$(dirname "$0")/.." && pwd)"
+dest="$HOME/.local/share/applications/runelite-boss-capture.desktop"
+mkdir -p "$(dirname "$dest")"
+cat > "$dest" <<DESKTOP
+[Desktop Entry]
+Type=Application
+Name=RuneLite (Boss Capture)
+Comment=RuneLite developer client that records boss fights
+Exec=$repo/bin/capture-client
+Icon=com.adamcake.Bolt
+Terminal=true
+Categories=Game;
+DESKTOP
+echo "Added $dest. Bolt is still in the menu for normal play."
