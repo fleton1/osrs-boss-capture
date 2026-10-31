@@ -213,3 +213,4 @@ Your warped sceptre has # charges remaining.
 Your weapon freezes over. You're forced to let go!
 [Gemstone Crab] Gemstone Crab not fought long enough for kill count.
 m-moo...
+Hey ExamplePlayer, come here!
