@@ -52,9 +52,14 @@ def scrub_totals(text):
     return OWED.sub(r"\1#", TOTALS.sub(r"\1#", text))
 
 
+# The Gemstone Crab names its top three damage dealers when it burrows.
+CRAB_TOP = re.compile(r"(The top three crab crushers were ).+?(!)")
+
+
 def scrub_text(chat_type, text):
     text = DROP.sub(lambda m: m.group(1) + "Player" + m.group(3), text)
     text = scrub_totals(text)
+    text = CRAB_TOP.sub(r"\1Player, Player & Player\2", text)
     if chat_type == "DIALOG" and "|" in text:
         speaker, rest = text.split("|", 1)
         if NBSP in speaker:

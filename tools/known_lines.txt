@@ -90,11 +90,13 @@ The cold of the Wintertodt seeps into your bones.
 The dragon is currently immune to your attacks.
 The effects of the divine potion have worn off.
 The electricity temporarily paralyzes you!
+The gemstone crab burrows away, leaving a piece of its shell behind.
 The glowing fish scatter, shedding their magical scales.
 The mast has been damaged!
 The priestess rows you to Zulrah's shrine, then hurriedly paddles away.
 The skies clear as Tempoross retreats to the depths.
 The spawn violently explodes, unfreezing you as it does so.
+The top three crab crushers were Player, Player & Player!
 The totem pole has been damaged!
 There's no need to do that at this time.
 These ruins are mine!
@@ -209,4 +211,5 @@ Your venom resistance has worn off, but you are still resistant to poison.
 Your venom resistance is about to wear off.
 Your warped sceptre has # charges remaining.
 Your weapon freezes over. You're forced to let go!
+[Gemstone Crab] Gemstone Crab not fought long enough for kill count.
 m-moo...
