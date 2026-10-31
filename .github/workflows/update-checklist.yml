@@ -1,0 +1,26 @@
+name: Update checklist
+
+on:
+  push:
+    branches: [main]
+    paths: ["data/captures/**", "tools/update_checklist.py", "src/main/java/**/BossCaptureConfig.java"]
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 tools/update_checklist.py
+      - name: Commit if it changed
+        run: |
+          git diff --quiet README.md && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Update the capture checklist"
+          git push

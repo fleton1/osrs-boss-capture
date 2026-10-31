@@ -202,7 +202,11 @@ Plus 1 longer recording(s) that span several fights.
 - `data/captures/<boss>/`: scrubbed recordings of real fights (rev 241), gzipped.
 - `docs/reports/`: what was measured from each boss's captures. They were written for a private offline
   project, so references to its source files (such as `Vorkath.kt`) won't resolve here. The measurements stand alone.
-- `tools/`: `scrub.py`, `summarize.py` and the Zulrah and Vorkath readers.
+- `tools/`: `scrub.py`, `check_captures.py`, `summarize.py` and the Zulrah and Vorkath readers.
+
+## Contributing
+
+Recordings of unticked bosses are the most useful thing you can add: see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Licence
 

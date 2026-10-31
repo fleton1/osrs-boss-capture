@@ -1,0 +1,41 @@
+name: Check captures
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Flag changes to what decides safety
+        if: github.event_name == 'pull_request'
+        run: |
+          changed=$(git diff --name-only "origin/${{ github.base_ref }}...HEAD" -- tools/known_lines.txt tools/scrub.py tools/check_captures.py .github)
+          if [ -n "$changed" ]; then
+            echo "::warning::This pull request changes what decides whether data is safe. Read these closely: $changed"
+          fi
+      - name: Check every capture
+        run: |
+          # On a pull request, use main's checker and allowlist, so it can't approve its own text.
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            mkdir -p "$RUNNER_TEMP/base/tools"
+            for f in check_captures.py scrub.py known_lines.txt; do
+              git show "origin/${{ github.base_ref }}:tools/$f" > "$RUNNER_TEMP/base/tools/$f"
+            done
+            mkdir -p "$RUNNER_TEMP/base/data"
+            cp -r data/captures "$RUNNER_TEMP/base/data/captures"
+            python3 "$RUNNER_TEMP/base/tools/check_captures.py"
+          else
+            python3 tools/check_captures.py
+          fi
