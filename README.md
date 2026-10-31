@@ -122,10 +122,84 @@ tools/summarize.py ~/osrs-captures/zulrah-20261029-201500.jsonl --npc 2042
 This prints NPC forms, animations with the common gaps between them (attack speed),
 projectile flight times, spot anims, sounds and damage taken.
 
+## Capture checklist
+
+Updated automatically as recordings are added. The number is how many recordings each fight has.
+
+<!-- checklist:start -->
+**15 of 63 captured**, 33 recordings in all.
+
+- [ ] Abyssal Sire
+- [x] Alchemical Hydra (1)
+- [ ] Amoxliatl
+- [ ] Araxxor
+- [ ] Artio
+- [x] Barrows Brothers (2)
+- [x] Blood Moon (1)
+- [x] Blue Moon (1)
+- [ ] Branda the Fire Queen
+- [x] Brutus (1)
+- [ ] Bryophyta
+- [ ] Callisto
+- [ ] Calvar'ion
+- [ ] Cerberus
+- [ ] Chaos Elemental
+- [ ] Commander Zilyana
+- [ ] Corporeal Beast
+- [ ] Corrupted Hunllef
+- [x] Crazy Archaeologist (1)
+- [ ] Crystalline Hunllef
+- [ ] Dagannoth Prime
+- [ ] Dagannoth Rex
+- [ ] Dagannoth Supreme
+- [ ] Doom of Mokhaiotl
+- [ ] Duke Sucellus
+- [x] Eclipse Moon (1)
+- [ ] Eldric the Ice King
+- [ ] Gemstone Crab
+- [ ] General Graardor
+- [x] Giant Mole (1)
+- [ ] Grotesque Guardians
+- [x] Hespori (1)
+- [ ] K'ril Tsutsaroth
+- [ ] Kalphite Queen
+- [ ] King Black Dragon
+- [ ] Kraken
+- [ ] Kree'arra
+- [ ] Nex
+- [ ] Obor
+- [ ] Phantom Muspah
+- [ ] Phosani's Nightmare
+- [ ] Royal Titans
+- [x] Sarachnis (1)
+- [ ] Scorpia
+- [x] Scurrius (1)
+- [ ] Skotizo
+- [ ] Sol Heredit
+- [ ] Spindel
+- [x] Tempoross (3)
+- [ ] The Hueycoatl
+- [ ] The Leviathan
+- [ ] The Nightmare
+- [ ] The Whisperer
+- [ ] TzKal-Zuk
+- [ ] TzTok-Jad
+- [ ] Vardorvis
+- [ ] Venenatis
+- [ ] Vet'ion
+- [x] Vorkath (2)
+- [x] Wintertodt (2)
+- [ ] Yama
+- [ ] Zalcano
+- [x] Zulrah (13)
+
+Plus 1 longer recording(s) that span several fights.
+<!-- checklist:end -->
+
 ## What's in this repo
 
 - `src/`, `bin/`: the plugin and its launcher scripts (`bin/` assumes Linux with the Bolt launcher).
-- `data/captures/<boss>/`: scrubbed recordings of real fights (rev 241), gzipped. 13 bosses and activities.
+- `data/captures/<boss>/`: scrubbed recordings of real fights (rev 241), gzipped.
 - `docs/reports/`: what was measured from each boss's captures. They were written for a private offline
   project, so references to its source files (such as `Vorkath.kt`) won't resolve here. The measurements stand alone.
 - `tools/`: `scrub.py`, `summarize.py` and the Zulrah and Vorkath readers.
