@@ -5,6 +5,8 @@
 A colossal wave closes in...
 A strong wind blows as clouds roll in...
 Ahahahaha, ONE more person ignored me...
+Arf arf!
+Aww, my mate doesn't like me.
 Blinded by the Eclipse Moon's light, your attack glances off its shield!
 Brutus enters. The cows scatter.
 CA_ID:#|Congratulations, you've completed a medium combat task: Efficient Pest Control (# points).
@@ -19,6 +21,7 @@ Fight duration: #:#. Personal best: #
 First Mate Peri|What do you need, adventurer? There is a battle to fight!
 Fix this brazier!
 Get off my site!
+Good day to you, milord.
 Greetings Player, I need your help.
 Greetings from the frog prince, Player!
 Hello, Player, are you there?
@@ -26,6 +29,7 @@ Hello, Player?
 Hsss!
 I can't reach that!
 I have come to check you, Player...
+I seek a moment of your time, sirrah!
 I'd like to talk to you, Player!
 I'm Bellock - respect me!
 I'm already under attack.
@@ -37,6 +41,10 @@ Light this brazier!
 Lighting the final brazier fills you with warmth, removing some of your cold buildup.
 Load those cannons!
 Maybe later.
+Meeeeow!
+Meeeeowby laaaater...
+Meeeow!
+Mew!
 Miaow!
 Moo
 More fish!
@@ -57,6 +65,7 @@ Sailor|Ahoy there! Ye best talk t' the Captain, she'll get ye up t' speed on the
 Sarachnis has webbed you in place!
 Sarachnis leeches some health as she damages you.
 Scales: # (#.#%)
+Shiver me' timbers, are you ignoring me?
 Storm clouds are rolling in, get your buckets ready!
 Subdued in #:#. Personal best: #
 Taste my knowledge!
@@ -134,6 +143,7 @@ You feel confused.
 You feel the vines loosen slightly as you try to move.
 You fill the bucket with water.
 You follow a long and winding tunnel before emerging on the other side.
+You gained enough understanding of the crab to mine from its remains.
 You get a bruma root.
 You have # dose of potion left.
 You have # doses of potion left.
@@ -211,5 +221,6 @@ Your venom resistance has worn off, but you are still resistant to poison.
 Your venom resistance is about to wear off.
 Your warped sceptre has # charges remaining.
 Your weapon freezes over. You're forced to let go!
+Yowl!
 [Gemstone Crab] Gemstone Crab not fought long enough for kill count.
 m-moo...
