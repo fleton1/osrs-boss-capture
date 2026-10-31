@@ -3,15 +3,19 @@
 
     python3 tools/scrub.py IN.jsonl[.gz] OUT.jsonl.gz
 
-Replaces player names in chat and in NPCs' speech with "Player", and cuts the session
-timestamp to its date.  Fails on a line holding a no-break space (a two-word name) or on chat
-from other players.  A one-word name in an NPC line it does not know gets through, so read
-the overhead_text lines of a new capture before you share it.
-Kill counts, personal bests and running totals become "#", so a capture can't be matched to an
-account on the hiscores.  The messages stay, since they mark when a kill happened.
+Player names in chat and in NPCs' speech become "Player".  Kill counts, personal bests and running
+totals become "#", so a capture can't be matched to an account on the hiscores.  The session
+timestamp is cut to its date.
+
+Text is published only if it is known safe: its shape is in tools/known_lines.txt, or it is one of
+the item messages below.  Anything else is replaced with "[unreviewed line]" and printed to stderr,
+because a new line could hold a player's name that no pattern would catch.  To allow one, read it,
+then add its shape to known_lines.txt (tags removed, numbers as #).  Chat from other players is
+dropped outright.
 """
 import gzip
 import json
+import os
 import re
 import sys
 
@@ -69,18 +73,45 @@ def scrub_line(d):
     return d
 
 
+KNOWN_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "known_lines.txt")
+UNREVIEWED = "[unreviewed line]"
+CHAT_TYPES = ("SPAM", "GAMEMESSAGE", "ENGINE", "MESBOX", "DIALOG")
+TAGS = re.compile(r"<[^>]+>|@\w+@")
+NUMBER = re.compile(r"\d[\d,]*")
+ITEM = r"[A-Za-z0-9#' ()+.\-/]+"
+# Messages whose only free text is an item's name.
+ITEM_LINES = re.compile(
+    rf"^(?:Player received a drop: {ITEM}|Valuable drop: {ITEM}|Untradeable drop: {ITEM}"
+    rf"|You found some loot: {ITEM}|You eat the {ITEM}\.|You drink some of your {ITEM}\.?)$"
+)
+
+
+def shape(text):
+    return NUMBER.sub("#", TAGS.sub("", text))
+
+
+def load_known():
+    with open(KNOWN_FILE, encoding="utf-8") as f:
+        return {line.rstrip("\n") for line in f if line.strip()}
+
+
+def is_known(text, known):
+    s = shape(text)
+    return not s.strip() or s in known or bool(ITEM_LINES.match(s))
+
+
 def main(src, dst):
+    known = load_known()
     opener = gzip.open if src.endswith(".gz") else open
     out = []
     with opener(src, "rt", encoding="utf-8") as f:
-        for n, line in enumerate(f, 1):
+        for line in f:
             d = scrub_line(json.loads(line))
-            if d.get("type") in ("chat", "overhead_text") and NBSP in d.get("text", ""):
-                sys.exit(f"{src}:{n}: possible player name left: {d['text']!r}")
-            if d.get("type") == "chat" and d.get("chatType") not in (
-                "SPAM", "GAMEMESSAGE", "ENGINE", "MESBOX", "DIALOG",
-            ):
-                sys.exit(f"{src}:{n}: chat from other players must not be shared: {d.get('chatType')}")
+            if d.get("type") == "chat" and d.get("chatType") not in CHAT_TYPES:
+                continue
+            if d.get("type") in ("chat", "overhead_text") and not is_known(d.get("text", ""), known):
+                print("unreviewed:", shape(d.get("text", "")), file=sys.stderr)
+                d["text"] = UNREVIEWED
             out.append(json.dumps(d, ensure_ascii=False, separators=(",", ":")))
     # mtime=0 and no name in the header: gzip stores neither the time nor the path
     with open(dst, "wb") as raw, gzip.GzipFile(filename="", mode="wb", fileobj=raw, mtime=0) as z:

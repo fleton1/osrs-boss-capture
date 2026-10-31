@@ -1,0 +1,212 @@
+*growls*
+*snorts*
+...the rope keeps you securely upright as the wave washes over you.
+...the wave slams into you, knocking you to the ground.
+A colossal wave closes in...
+A strong wind blows as clouds roll in...
+Ahahahaha, ONE more person ignored me...
+Blinded by the Eclipse Moon's light, your attack glances off its shield!
+Brutus enters. The cows scatter.
+CA_ID:#|Congratulations, you've completed a medium combat task: Efficient Pest Control (# points).
+CA_ID:#|Congratulations, you've completed a medium combat task: Perfect Scurrius (# points).
+Captain Pudi|Excellent work out there! The seas are safe for a little longer thanks to you!
+Captain Pudi|We usually find some debris washed up near the docks. Feel free to have a look. Ya might find somethin' useful!
+Check out our newsposts for the latest info!
+Come on Player, I made these specially!
+Extra! Extra! Read all about it!
+Eyatlalli's voice echoes through the surrounding earth...
+Fight duration: #:#. Personal best: #
+First Mate Peri|What do you need, adventurer? There is a battle to fight!
+Fix this brazier!
+Get off my site!
+Greetings Player, I need your help.
+Greetings from the frog prince, Player!
+Hello, Player, are you there?
+Hello, Player?
+Hsss!
+I can't reach that!
+I have come to check you, Player...
+I'd like to talk to you, Player!
+I'm Bellock - respect me!
+I'm already under attack.
+It grants you immunity from venom.
+It heals some health.
+Keep an eye on the waves!
+Let's get underway!
+Light this brazier!
+Lighting the final brazier fills you with warmth, removing some of your cold buildup.
+Load those cannons!
+Maybe later.
+Miaow!
+Moo
+More fish!
+No-one messes with Bellock's dig!
+Nothing interesting happens.
+Ow!
+Parley wi' me, my old fruit!
+Payment has been taken from your coffer: # Coins.
+Player? Are you there?
+Player|Thanks!
+Please let me check you, Player!
+Points: #. Personal best: #
+Quack!
+Rain of knowledge!
+Reward permits: #. Total permits: #.
+Roaaaaaaaaaaar!
+Sailor|Ahoy there! Ye best talk t' the Captain, she'll get ye up t' speed on the moist beastie ye'll be facin'!
+Sarachnis has webbed you in place!
+Sarachnis leeches some health as she damages you.
+Scales: # (#.#%)
+Storm clouds are rolling in, get your buckets ready!
+Subdued in #:#. Personal best: #
+Taste my knowledge!
+Tempoross has disabled a cannon! Switch to another!
+Tempoross has retreated to the depths!
+Tempoross has submerged, fish from the whirlpools!
+Tempoross has surfaced, keep those cannons firing!
+Tempoross is drawing in water, prepare yourselves!
+Tempoross is vulnerable!
+Tempoross will surface soon, prepare yourselves!
+That item is considered valuable. Really cast High Level Alchemy on it?
+The Alchemical Hydra becomes enraged!
+The Alchemical Hydra temporarily stuns you.
+The Alchemical Hydra's defences partially absorb your attack!
+The Blood Moon pierces your defence and saps your vitality!
+The Blue Moon pierces your defence and chills your joints!
+The Blue Moon pierces your defence. The cold is starting to get in...
+The Blue Moon pierces your defence. Your joints are starting to lock up...
+The Eclipse Moon attacks you from a direction you weren't prepared for!
+The Eclipse Moon's light pierces your defence and blinds you!
+The Hespori entangles you in some vines!
+The Hespori is currently immune to your attacks.
+The Royal seed pod teleports you to the Grand Tree.
+The Spirit Anglers weigh anchor and sail you out to face Tempoross.
+The Spirit Anglers will ferry you back to the Ruins of Unkah in # seconds.
+The amulet has # charges.
+The brazier has gone out.
+The chemicals are absorbed by the Alchemical Hydra, empowering it further!
+The chemicals neutralise the Alchemical Hydra's defences!
+The cold of the Wintertodt seeps into your bones.
+The dragon is currently immune to your attacks.
+The effects of the divine potion have worn off.
+The electricity temporarily paralyzes you!
+The glowing fish scatter, shedding their magical scales.
+The mast has been damaged!
+The priestess rows you to Zulrah's shrine, then hurriedly paddles away.
+The skies clear as Tempoross retreats to the depths.
+The spawn violently explodes, unfreezing you as it does so.
+The totem pole has been damaged!
+There's no need to do that at this time.
+These ruins are mine!
+This jaguar doesn't possess any of your blood!
+To the boats! We'll set sail soon!
+Victorious, you sail back to the Ruins of Unkah to prepare for the next encounter...
+We can rest for a time.
+We'll set sail in the next # seconds.
+Woof woof!
+Yemalo shi cardito!
+You adapt the visage to fit on a human head.
+You become unfrozen as you kill the spawn.
+You belong in a museum!
+You bury the bones.
+You can find # more rewards in the pool.
+You can't carry any more fish.
+You cannot attack the Alchemical Hydra as it changes form!
+You carefully fletch the root into a bundle of kindling.
+You catch a harpoonfish!
+You catch and release the moonlight moth.
+You climb over the rocks.
+You dare disturb my rest!
+You deposit your items into the bank.
+You did not earn enough points to be worthy of a gift from the citizens of Kourend this time.
+You dig a hole in the ground...
+You dispel the Blue Moon's shroud over the brazier, causing it to re-ignite!
+You don't find anything.
+You don't have enough free inventory space to do that.
+You don't have enough inventory space to hold that item.
+You don't have enough inventory space.
+You enter deeper into the ancient burial crypt.
+You enter the spider's lair.
+You extinguish the fire.
+You feel confused.
+You feel the vines loosen slightly as you try to move.
+You fill the bucket with water.
+You follow a long and winding tunnel before emerging on the other side.
+You get a bruma root.
+You have # dose of potion left.
+You have # doses of potion left.
+You have a sneaking suspicion that you would have received a beginner scroll box.
+You have a sneaking suspicion that you would have received an easy scroll box.
+You have been frozen!
+You have been poisoned by venom!
+You have been poisoned!
+You have correctly entered your PIN.
+You have earned enough points for a reward permit.
+You have finished your potion.
+You have gained # Firemaking XP.
+You have helped enough to earn a supply crate.
+You have run out of bruma roots.
+You have run out of prayer points, you can recharge at an altar.
+You have successfully cleared this patch for new crops.
+You haven't got anything to cook.
+You light the brazier.
+You lose some fish and a Bucket of water to the waves.
+You manage to break free of the vines!
+You manage to catch an extra harpoonfish as it jumps out of the water.
+You need a hammer to fix this brazier.
+You need a tinderbox or Bruma Torch to light that brazier.
+You need at least two free spaces in your inventory to clear this patch.
+You quickly smash the empty vial using the trick a Barbarian taught you.
+You repair the totem pole.
+You retrieve your weapon from within the cracked ice.
+You ring the bell... and hear something approaching.
+You securely tether yourself to the mast.
+You securely tether yourself to the totem pole.
+You seem to have dropped down into a network of mole tunnels.
+You slash the web apart with your Wilderness sword.
+You start digging the farming patch...
+You start harpooning fish.
+You start loading harpoonfish into the cannon.
+You successfully cook a harpoonfish.
+You suddenly feel drained. A blood jaguar is shaping from your blood!
+You swing your axe at the roots.
+You take a Bucket from the crate.
+You take a Hammer from the crate.
+You take some Buckets from the crate.
+You untether yourself from the mast.
+You untether yourself from the totem pole.
+You're owed an additional # rewards from the reward cart. You're now owed # rewards.
+You're stunned!
+You've broken into a crypt!
+Your Alchemical Hydra kill count is: #.
+Your Brutus kill count is: #.
+Your Crazy Archaeologist kill count is: #.
+Your Giant Mole kill count is: #.
+Your Hespori kill count is: #.
+Your Lunar Chest count is: #.
+Your Sarachnis kill count is: #.
+Your Scurrius kill count is: #.
+Your Tempoross kill count is: #.
+Your Vorkath kill count is: #.
+Your Zulrah kill count is: #.
+Your divine potion effect is about to expire.
+Your inventory is too full to hold any more roots.
+Your joints lock up as you go to attack. The cold is too much to bear!
+Your poison resistance has worn off.
+Your poison resistance is about to wear off.
+Your prayers have been disabled!
+Your shield absorbs most of the dragon's corrupting breath!
+Your shield absorbs most of the dragon's fiery breath!
+Your shield absorbs most of the dragon's venomous breath!
+Your subdued Wintertodt count is: #.
+Your super antifire potion has expired.
+Your super antifire potion helps to protect you from the dragon's corrupting breath!
+Your super antifire potion helps to protect you from the dragon's fiery breath!
+Your super antifire potion helps to protect you from the dragon's venomous breath!
+Your super antifire potion is about to expire.
+Your tome has been charged with Burnt Pages. It currently holds # charges.
+Your venom resistance has worn off, but you are still resistant to poison.
+Your venom resistance is about to wear off.
+Your warped sceptre has # charges remaining.
+Your weapon freezes over. You're forced to let go!
+m-moo...

@@ -7,8 +7,8 @@ offline boss scripts can be checked against real fights tick by tick.
 > contains belong to Jagex. Use this at your own risk and within Jagex's rules.
 >
 > **Sharing data:** captures hold your display name, other players' names and your kill counts. Run
-> `python3 tools/scrub.py IN OUT.jsonl.gz`, then read the `overhead_text` lines of anything
-> new, before you publish a capture.
+> `python3 tools/scrub.py IN OUT.jsonl.gz` before you publish a capture. Text it hasn't seen becomes
+> `[unreviewed line]`: read what it prints, and add safe lines to `tools/known_lines.txt`.
 
 It is **log-only**: no overlays, no sounds, no menu entries, no input. Nothing is shown
 during a fight, so it stays clear of the banned boss-helper features in Jagex's
