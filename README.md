@@ -127,7 +127,7 @@ projectile flight times, spot anims, sounds and damage taken.
 Updated automatically as recordings are added. The number is how many recordings each fight has.
 
 <!-- checklist:start -->
-**15 of 63 captured**, 33 recordings in all.
+**16 of 63 captured**, 34 recordings in all.
 
 - [ ] Abyssal Sire
 - [x] Alchemical Hydra (1)
@@ -156,7 +156,7 @@ Updated automatically as recordings are added. The number is how many recordings
 - [ ] Duke Sucellus
 - [x] Eclipse Moon (1)
 - [ ] Eldric the Ice King
-- [ ] Gemstone Crab
+- [x] Gemstone Crab (1)
 - [ ] General Graardor
 - [x] Giant Mole (1)
 - [ ] Grotesque Guardians
