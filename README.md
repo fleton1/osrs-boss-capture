@@ -127,7 +127,7 @@ projectile flight times, spot anims, sounds and damage taken.
 Updated automatically as recordings are added. The number is how many recordings each fight has.
 
 <!-- checklist:start -->
-**16 of 63 captured**, 56 recordings in all.
+**16 of 63 captured**, 64 recordings in all.
 
 - [ ] Abyssal Sire
 - [x] Alchemical Hydra (1)
@@ -193,7 +193,7 @@ Updated automatically as recordings are added. The number is how many recordings
 - [ ] Zalcano
 - [x] Zulrah (13)
 
-Plus 22 longer recording(s) that span several fights.
+Plus 30 longer recording(s) that span several fights.
 <!-- checklist:end -->
 
 ## What's in this repo
