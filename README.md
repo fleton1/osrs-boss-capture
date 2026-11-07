@@ -26,7 +26,7 @@ remapping is undone.
 | type | contents |
 | --- | --- |
 | `session` | boss, start time, game revision, world, instanced |
-| `tick` | your tile, animation, pose, HP, prayer points, run energy, target; active prayers (when they change); every NPC in range with id, tile, orientation, animation, pose, HP ratio, target |
+| `tick` | your tile, animation, pose, HP, prayer points, run energy, target; active prayers (when they change); every NPC in range with id, tile, orientation, animation, pose, HP ratio, target; while you sail, your own boat (`boat`: sea tile with the sub-tile offset, heading and the heading it is turning to, its type and size, and your tile on the main map). Other players' boats are never recorded |
 | `npc_spawn` / `npc_despawn` / `npc_change` | NPC index, id, name, size, combat level; form changes (e.g. Zulrah colours) |
 | `anim` / `spotanim` | animation or spot-anim changes on you or an NPC in range |
 | `projectile` | id, start and end cycle, slope, start and end height, source and target tile and actor |

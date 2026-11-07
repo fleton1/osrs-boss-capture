@@ -38,6 +38,8 @@ import net.runelite.api.Player;
 import net.runelite.api.Prayer;
 import net.runelite.api.Projectile;
 import net.runelite.api.Skill;
+import net.runelite.api.WorldEntity;
+import net.runelite.api.WorldEntityConfig;
 import net.runelite.api.WorldView;
 import net.runelite.api.coords.LocalPoint;
 import net.runelite.api.coords.WorldPoint;
@@ -286,6 +288,12 @@ public class BossCapturePlugin extends Plugin
 		p.addProperty("run", client.getEnergy());
 		addTarget(p, me.getInteracting());
 		o.add("player", p);
+
+		JsonObject boat = ownBoat(me);
+		if (boat != null)
+		{
+			o.add("boat", boat);
+		}
 
 		List<String> prayers = activePrayers();
 		if (!prayers.equals(lastPrayers))
@@ -734,6 +742,64 @@ public class BossCapturePlugin extends Plugin
 		int dx = Math.abs(lp.getSceneX() - mine.getSceneX());
 		int dy = Math.abs(lp.getSceneY() - mine.getSceneY());
 		return Math.max(dx, dy) <= config.radius();
+	}
+
+
+	/**
+	 * The boat the player stands on, while sailing: its sea tile with the sub-tile offset (128 a tile), heading and the
+	 * heading it is turning to (0..2047), its config id and size, and the player's tile on the main map. Read-only, like
+	 * every other field here; only the player's own boat is recorded, never another player's.
+	 */
+	private JsonObject ownBoat(Player me)
+	{
+		WorldView on = me.getWorldView();
+		if (on == null || on.isTopLevel())
+		{
+			return null;
+		}
+		for (WorldEntity we : worldView().worldEntities())
+		{
+			WorldView wv = we.getWorldView();
+			if (wv == null || wv.getId() != on.getId() || we.getOwnerType() == WorldEntity.OWNER_TYPE_OTHER_PLAYER)
+			{
+				continue;
+			}
+			JsonObject b = new JsonObject();
+			LocalPoint lp = we.getLocalLocation();
+			addPoint(b, lp);
+			if (lp != null)
+			{
+				b.addProperty("subX", lp.getX() & 127);
+				b.addProperty("subY", lp.getY() & 127);
+			}
+			b.addProperty("orientation", we.getOrientation());
+			b.addProperty("targetOrientation", we.getTargetOrientation());
+			LocalPoint target = we.getTargetLocation();
+			if (target != null)
+			{
+				JsonObject t = new JsonObject();
+				addPoint(t, target);
+				t.addProperty("subX", target.getX() & 127);
+				t.addProperty("subY", target.getY() & 127);
+				b.add("target", t);
+			}
+			WorldEntityConfig config = we.getConfig();
+			if (config != null)
+			{
+				b.addProperty("config", config.getId());
+				b.addProperty("width", config.getBoundsWidth());
+				b.addProperty("height", config.getBoundsHeight());
+			}
+			LocalPoint deck = me.getLocalLocation();
+			if (deck != null)
+			{
+				JsonObject main = new JsonObject();
+				addPoint(main, we.transformToMainWorld(deck));
+				b.add("playerOnMap", main);
+			}
+			return b;
+		}
+		return null;
 	}
 
 	private WorldView worldView()
