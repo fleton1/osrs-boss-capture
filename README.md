@@ -127,7 +127,7 @@ projectile flight times, spot anims, sounds and damage taken.
 Updated automatically as recordings are added. The number is how many recordings each fight has.
 
 <!-- checklist:start -->
-**17 of 63 captured**, 71 recordings in all.
+**18 of 63 captured**, 73 recordings in all.
 
 - [ ] Abyssal Sire
 - [x] Alchemical Hydra (1)
@@ -137,7 +137,7 @@ Updated automatically as recordings are added. The number is how many recordings
 - [x] Barrows Brothers (2)
 - [x] Blood Moon (1)
 - [x] Blue Moon (1)
-- [ ] Branda the Fire Queen
+- [x] Branda the Fire Queen (1)
 - [x] Brutus (1)
 - [ ] Bryophyta
 - [ ] Callisto
@@ -193,7 +193,7 @@ Updated automatically as recordings are added. The number is how many recordings
 - [x] Zalcano (3)
 - [x] Zulrah (13)
 
-Plus 34 longer recording(s) that span several fights.
+Plus 35 longer recording(s) that span several fights.
 <!-- checklist:end -->
 
 ## What's in this repo
