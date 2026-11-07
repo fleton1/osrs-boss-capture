@@ -1,7 +1,8 @@
 # osrs-boss-capture
 
 A RuneLite plugin that records boss fights to JSONL files, so the
-offline boss scripts can be checked against real fights tick by tick.
+offline boss scripts can be checked against real fights tick by tick. With **Record everything**
+on, it records any activity the same way: skilling, Agility laps, minigames, Sailing.
 
 > Not affiliated with or endorsed by Jagex or RuneLite. Old School RuneScape and everything it
 > contains belong to Jagex. Use this at your own risk and within Jagex's rules.
@@ -195,6 +196,51 @@ Updated automatically as recordings are added. The number is how many recordings
 
 Plus 50 longer recording(s) that span several fights.
 <!-- checklist:end -->
+
+### Beyond bosses
+
+Kept by hand (the list above is bosses only). These are recorded with **Record everything** on; a minute or
+two of each is plenty, and several can share one file. Ticked ones have at least one recording.
+
+**Agility**
+- [x] Every rooftop course (Draynor to Ardougne)
+- [x] Gnome Stronghold, Barbarian Outpost, Wilderness, Werewolf, Ape Atoll, Penguin
+- [x] Shayzien (Basic and Advanced), Colossal Wyrm (Basic and Advanced), Prifddinas
+- [ ] A course with a fall on it (rope swing, log, ledge)
+
+**Skilling**
+- [x] Woodcutting, every tree up to redwoods
+- [x] Mining, every ore up to runite
+- [x] Fishing, every method; Cooking on a fire and a range
+- [x] Firemaking (a line of fires)
+- [x] Smithing (smelting and an anvil)
+- [x] Hunter (box traps, chinchompas)
+- [x] Thieving: a stall and a guard's arrest
+- [ ] Thieving: pickpocketing until stunned
+- [ ] Runecrafting (an altar trip)
+- [ ] Fletching, Crafting, Herblore (a few of each)
+- [ ] Cooking: a whole stack in one go, with a burn
+
+**Minigames and activities**
+- [x] Vale Totems, including a full ent round
+- [x] Zalcano (solo and mass)
+- [x] Pest Control (Veteran)
+- [ ] Tempoross, Wintertodt or Guardians of the Rift (one round)
+- [ ] Royal Titans: a fight where you loot one Titan
+
+**Sailing**
+- [x] Sailing between ports (wind, trimming, a hazard)
+- [x] Port tasks: one delivered, one to the wrong port
+- [x] Salvaging a shipwreck and sorting it
+- [x] A castaway rescue
+- [ ] Charting, trawling, a sea creature, Barracuda Trials
+
+**Travel**
+- [ ] Fairy ring, spirit tree, gnome glider, canoe, minecart, quetzal, a ship
+
+**Out and about**
+- [x] A walk round Lumbridge and Draynor (for NPC placement)
+- [ ] The same for Varrock, Falador, Ardougne, Seers', Civitas, the Kourend houses
 
 ## What's in this repo
 
